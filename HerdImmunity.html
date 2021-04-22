@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+-->
+</head>
+<body>
+	<table>
+		<tr>
+			<td><canvas id="cityArea" width="800" height="400" style="border:1px solid #000000;"></canvas></td>
+			<td>
+				<h3>Healthy</h3>
+				<p id="healthy">0</p>
+				<h3>Infected</h3>
+				<p id="infected">0</p>
+				<h3>Recovered</h3>
+				<p id="recovered">0</p>
+				<h3>Protected</h3>
+				<p id="protect">0</p>
+				<h3>% of unprotected not infected</h3>
+				<p id="percent">0</p>
+			</td>
+			<td>
+				<p><label for="txtVaccinated">Number to vaccinate:</label><br />
+				<input id="txtVaccinated" type="text" value="0"></input></p>
+				</p><button id="btnStart" onclick="startScript()">Start Simulation</button></p>
+			</td>
+		<tr>
+	</table>
+	<canvas id="popGraph" width="1500" height="200" style="border:1px solid #000000;"></canvas>
+	<script src="populationMovement.js"></script>
+
+</body>
+</html>
